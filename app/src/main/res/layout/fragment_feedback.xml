@@ -1,0 +1,158 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin1.myapplication.Feedback">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="373dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:id="@+id/Add"
+                android:text=" Add Feedback "
+                android:layout_gravity="center_horizontal"
+                android:textColor="#040404"
+                android:background="@color/colorPrimary"/>
+            <TextView
+                android:text=" Name "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/nametext"
+                android:textSize="15dp"
+                android:textColor="#010101"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:text=" Year "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/yeartext"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+
+                android:textSize="15dp"
+                android:textColor="#010101" />
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:maxLength="1"
+                android:visibility="gone"
+                android:inputType="number"
+                 />
+            <TextView
+                android:text=" Branch "
+                android:id="@+id/branchtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+                android:inputType="text"
+                android:textSize="15dp"
+                android:textColor="#010101" />
+
+            <TextView
+                android:id="@+id/branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:layout_marginRight="15dp"
+               />
+            <TextView
+                android:text=" Company "
+                android:id="@+id/comp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+                android:textSize="15dp"
+                android:textColor="#010101" />
+
+            <EditText
+                android:id="@+id/compt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:inputType="text"
+                android:layout_marginRight="15dp"
+                />
+            <TextView
+                android:text=" What's feedback? "
+                android:id="@+id/feedtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+                android:textSize="15dp"
+                android:textColor="#010101" />
+
+            <EditText
+                android:id="@+id/idea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:maxLength="500"
+                android:visibility="gone"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:text="Save"
+                android:textColor="#040404"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <ListView
+                android:id="@+id/list_view_for_courses"
+                android:layout_height="525dp"
+                android:layout_width="341dp"
+                android:layout_margin="7dp"
+                android:background="#faf9f9"
+                android:padding="5dp"
+                android:layout_gravity="center">
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

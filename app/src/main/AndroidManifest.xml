@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin1.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="MNNIT JobFest"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER"
+                    android:configChanges="keyboardHidden|orientation|screenSize"
+                    android:label="MNNIT JobFest" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".SignupActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Register" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Profile"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".edit" />
+        <activity android:name=".compDef" />
+        <activity android:name=".feedDef"></activity>
+    </application>
+
+</manifest>

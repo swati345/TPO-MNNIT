@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.admin1.myapplication.contact">
+
+<!-- TODO: Update blank fragment layout -->
+
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    android:textColor="#000000"
+    android:text="TPO Representatives"
+    android:background="@drawable/bg_transparent"/>
+
+<ListView
+    android:id="@+id/listView"
+    android:layout_below="@+id/textView1"
+    android:paddingTop="60dp"
+    android:paddingBottom="60dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+</ListView>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|bottom"
+    android:textAlignment="center"
+    android:background="@color/colorPrimary"
+    android:text="  mnnit.placements@gmail.com  "
+    android:textAllCaps="false"
+    android:id="@+id/mail"
+    android:textSize="20dp"/>
+
+
+</FrameLayout>

@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin1.myapplication.Upcompany">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ListView
+        android:id="@+id/list_view_for_courses"
+        android:layout_height="525dp"
+        android:layout_width="341dp"
+        android:layout_margin="7dp"
+        android:background="#faf9f9"
+        android:padding="5dp"
+        android:layout_gravity="center">
+    </ListView>
+</LinearLayout>
+    </ScrollView>
+</FrameLayout>
+
